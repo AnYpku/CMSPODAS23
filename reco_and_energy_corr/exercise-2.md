@@ -54,7 +54,9 @@ Give explanations<br>
 What do you observe from the variations of the resolution with ECAL or tracker?<br>
 
 ### Q2.4 Compare the Z mass distribution after the energy regression<br>
-The $mass$ is the branch ``mass`` in the ntuple trees. We could use ntuple trees in ``/eos/user/y/yian/Ntuples_CMSPODAS/GGMassNtup/*.root`` and  the ID requirements could be applied as ``(ele1IDbit&0x4)!=0 && (ele2IDbit&0x4)!=0``, the histograms can be obtained as:<br>
+Now let's compare data and MC. To do this we will use a new set of ntuples to simplify things. These ntuples are generated instead of each branch being a vector of entries with each entry corresponding to a given electron, we now have single entry branches corresponding to ele1 and ele2. This makes it much easier and faster to compare a mass spectrum. Let's see the case in 2017. This is because the initial calibration in 2017 was not as good as in 2018 so it demonstrates the change more. We select HLT_Ele23_Ele12 triggered events.<br>
+
+The $mass$ is the branch ``mass`` and ntuples are in ``/eos/user/y/yian/Ntuples_CMSPODAS/GGMassNtup/*.root`` and  the ID requirements could be applied as ``(ele1IDbit&0x4)!=0 && (ele2IDbit&0x4)!=0``, the histograms can be obtained as:<br>
 ``dy2017Tree = HistFuncs::makeChain("EventMassTree","/eos/user/y/yian/Ntuples_CMSPODAS/GGMassNtup/dyJets_94X_massTreeV2.root");``<br>
 ``data2017Tree = ...``
 ``MCHist = HistFuncs::makeHist(dy2017Tree,100,50,120,"mass","(ele1IDbit&0x4)!=0 && (ele2IDbit&0x4)!=0 && ele1Pt>25 && ele2Pt>25")``<br>
