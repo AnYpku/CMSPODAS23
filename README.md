@@ -1,5 +1,15 @@
 # CMSPODAS23
-This repo is for the EGamma long exercise of the CMS Physics object & data analysis school [CMSPODAS2023](https://indico.desy.de/event/38207). The exercise focuses on:
+This repo is for the EGamma long exercise of the CMS Physics object & data analysis school [CMSPODAS2023](https://indico.desy.de/event/38207). 
+
+Some references:
+ - [CMSDAS CERN 2023](https://indico.cern.ch/event/1257234/)
+ - [CMSDAS LPC 2023](https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolLPC2023EGammaShortExercise)
+ - [CMSDAS 2021](https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolLPC2021EGammaExercise)
+ - [LPC HATS 2020](https://twiki.cern.ch/twiki/bin/view/CMS/EGammaHATSatLPC2020)
+ - [CMSDAS 2020](https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolLPC2020EGammaExercise)
+
+
+The exercise focuses on these following steps:
 
 ### Produce ntuples
 Based on the [NANOAOD framework](https://github.com/cms-nanoAOD/nanoAOD-tools.git). CMSSW environment and packages should be set up firstly as follows:<br>
@@ -16,7 +26,7 @@ Ntuple tree contains electron branches could be produced by running:<br>
 ``python run_egamma_producer.py -f filename -y year``<br>
 
 ### Swan setup 
-We will use here https://swan.cern.ch
+We will use here https://swan.cern.ch for some exercises.
 Please use software stack "102", maximum cores and maximum RAM, when selecting the environment.
 
 ![](reco_and_energy_corr/Pics/instr1.png)
