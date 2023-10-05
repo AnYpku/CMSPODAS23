@@ -7,7 +7,7 @@ Load library<br>
 ``gSystem->Load("libCMSPODAS23EgammaTools.so")``<br>
 
 Define tree<br>
-we have files saved in ``/eos/user/y/yian/Ntuples_CMSPODAS/0000/`` and skimming files in ``/eos/user/y/yian/Ntuples_CMSPODAS/GGNtupSkimmed/``with all fakes removal<br>
+we have files saved in ``/eos/user/y/yian/Ntuples_CMSPODAS/0000/`` and skimming files in ``/eos/user/y/yian/Ntuples_CMSPODAS/GGNtupSkimmed/``with all fakes removal. Nutuple tress could be called by <br>
 ``tree = HistFuncs::makeChain("ggNtuplizer/EventTree","/eos/user/y/yian/Ntuples_CMSPODAS/0000/*.root",10)``;<br>
 
 Draw histograms<br>
